@@ -16,8 +16,8 @@ function init() {
     .prompt([
       {
         type: 'input',
-        name: 'name',
         message: 'What is your GitHub user name?',
+        name: 'name',
       },
       {
         type: 'input',
@@ -46,14 +46,14 @@ function init() {
       },
       {
         type: 'input',
-        message: 'Did anyone assist in building the application?',
+        message: 'Any contributors to this project?',
         name: 'credits',
       },
       {
         type: "list",
         name: "license",
         message: "Select a license for your README file.",
-        choices: ["GNU GPL v2", "GNU GPL v3", "GNU LGPL v3", "MIT", "No License"]
+        choices: ["Apache 2.0", "GNU GPL v2", "GNU GPL v3", "GNU LGPL v3", "MIT", "No License"]
     },
     ])
     .then(response => {
@@ -62,7 +62,7 @@ function init() {
   const responses = generateMarkdown(response);  
  
   //calls the write function with title of md and responses run through the generate Markdown text
-  writeToFile("newReadMe.md", responses); 
+  writeToFile("README.md", responses); 
     });
   
 }
