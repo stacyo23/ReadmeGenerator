@@ -7,19 +7,20 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
-  ##Installation
+  ## Installation
   The following will be necessary to download in order for the file to run correctly: ${data.install}.
 
-  ##Usage
+  ## Usage
   ${data.usage}
 
-  ##Credits
+  ## Credits
   ${data.credit}
 
-  ##License
+  ## License
   ${data.license}
 
 `;
 }
 //exports this script to index
 module.exports = generateMarkdown;
+
