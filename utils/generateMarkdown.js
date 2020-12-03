@@ -3,7 +3,7 @@ function generateMarkdown(data) {
     // template literals to find and replace
   return `
   # ${data.title}
-
+  
   ## Description
   ${data.description}
 

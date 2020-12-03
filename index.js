@@ -5,8 +5,7 @@ const fs = require('fs');
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data)), err =>
-        err ? console.log(err) : console.log('Success!'); 
+    fs.writeFile(fileName, data, err => err ? console.log(err) : console.log('Success!')); 
         
 }
 
@@ -28,7 +27,7 @@ function init() {
       {
         type: 'input',
         message: 'What is the title of your project?',
-        name: 'description',
+        name: 'title',
       },
       {
         type: 'input',
@@ -59,14 +58,14 @@ function init() {
     ])
     .then(response => {
 
-  //runs responses through the generateMarkdown text      
-  const data = generateMarkdown(response);  
+  //runs responses through the generateMarkdown text that was imported from the other script page     
+  const responses = generateMarkdown(response);  
  
   //calls the write function with title of md and responses run through the generate Markdown text
-  writeToFile(newReadMe.md, data); 
+  writeToFile("newReadMe.md", responses); 
     });
   
 }
 
-// function call to initialize program
+// function call to initialize questions
 init();
