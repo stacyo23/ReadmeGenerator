@@ -23,7 +23,9 @@ function generateMarkdown(data) {
     // template literals to find and replace
   return `
   # ${data.title}
-  
+
+  ${addBadge(data.license)}
+
   ## Description
   ${data.description}
 
@@ -32,9 +34,6 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
-
-  ## Credits
-  ${data.credits}
 
   ## License
   ${data.license}

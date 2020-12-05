@@ -1,21 +1,20 @@
 
-  # readme generator
-  
+  # README-Generator
+
+  ![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+
   ## Description
-  m
+  It generates readme's using a command-line interface for input
 
   ## Installation
-  The following will be necessary to download in order for the file to run correctly: m.
+  The following will be necessary to download in order for the file to run correctly: inquirer.
 
   ## Usage
-  m
-
-  ## Credits
-  none
+  The application is used to build readme's based on user input.
 
   ## License
-  MIT
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  Apache 2.0
+  ![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
   ## Contact
   Please feel free to contact me at stacyo23@yahoo.com for questions or feedback. 

@@ -44,11 +44,7 @@ function init() {
         message: 'Please describe how the application will be used.',
         name: 'usage',
       },
-      {
-        type: 'input',
-        message: 'Any contributors to this project?',
-        name: 'credits',
-      },
+    
       {
         type: "list",
         name: "license",
