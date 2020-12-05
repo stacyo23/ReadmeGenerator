@@ -1,22 +1,23 @@
 
   # README-Generator
 
-  
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
-  The application is a command-line application that takes user input to create a readme file.
+  Command-line interface application takes users input and outputs a readme
 
   ## Installation
-  The following will be necessary to download in order for the file to run correctly: inquirer.
+  The following will be necessary to download in order for the file to run correctly: Inquirer.
 
   ## Usage
-  The application will be used to create readme files based on user input
+  Application uses both inquirer library as well as NODEjs to crate the CLI to make the readme
+
+## Demonstration
+![Demonstration](utils/RMG.gif)
 
   ## License
-  No License
-  
-  ## Demonstration
-  ![Demonstration](utils/Demo.gif)
+  MIT
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Contact
   Please feel free to contact me at stacyo23@yahoo.com for questions or feedback. 
